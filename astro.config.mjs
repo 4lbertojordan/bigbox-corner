@@ -6,8 +6,11 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'BigBox Corner',
+			logo: {
+				src: './src/assets/bigbox_logo1.svg',
+			},
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/4lbertojordan/bigbox-corner' }],
 			sidebar: [
 				{
 					label: 'Guides',
