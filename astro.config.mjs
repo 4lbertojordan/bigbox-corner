@@ -4,6 +4,10 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	i18n: {
+		defaultLocale: 'es',
+		locales: ['es', 'en'],
+	},
 	integrations: [
 		starlight({
 			title: 'BigBox Corner',
@@ -15,13 +19,16 @@ export default defineConfig({
 				{
 					label: 'Guides',
 					items: [
-						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', slug: 'guides/example' },
 					],
 				},
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Hardware',
+					autogenerate: { directory: 'hardware' },
 				},
 			],
 		}),
