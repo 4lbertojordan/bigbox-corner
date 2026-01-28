@@ -1,0 +1,19 @@
+h1[data-page-title] {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+@media (min-width: 50rem) {
+  h1[data-page-title] {
+    font-size: 1.9rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+}

@@ -11,6 +11,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'BigBox Corner',
+			customCss: ['./src/styles/starlight.css'],
 			logo: {
 				src: './src/assets/bigbox_logo1.svg',
 			},
@@ -23,8 +24,8 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Videojuegos',
+					autogenerate: { directory: 'videojuegos' },
 				},
 				{
 					label: 'Hardware',

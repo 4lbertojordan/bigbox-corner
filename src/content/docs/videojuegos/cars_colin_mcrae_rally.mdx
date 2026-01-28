@@ -1,0 +1,125 @@
+---
+title: "Colin McRae Rally"
+description: "Guía técnica para Big Box Corner: Hardware real y PC moderno."
+hero:
+  tagline: "Estado: Totalmente jugable con mejoras Parches necesarios"
+---
+
+import { Steps, Aside, Tabs, TabItem, CardGrid, Card } from '@astrojs/starlight/components';
+
+## 📋 Ficha Técnica Rápida
+
+| Especificación | Detalle |
+| :--- | :--- |
+| **Lanzamiento** | 1998 |
+| **Desarrollador** | Codemasters |
+| **Soporte API** | DirectX 6 |
+| **Sistemas Operativos** | Windows 95/98 |
+
+
+---
+
+## 📊 Requisitos oficiales
+
+<Tabs>
+  <TabItem label="Requisitos mínimos 320x240" icon="rocket">
+    * **Sistema Operativo** Windows 95 o 98
+    * **CPU:** Pentium 166 Mhz
+    * **RAM:** 16Mb
+    * **GPU:** Tarjeta gráfica con soporte DirectX 6 PCI/AGP con 2Mb de VRAM
+    * **Audio:** Tarjeta de sonido con soporte DirectX 6
+  </TabItem>
+
+  <TabItem label="Requisitos recomendados 640x480" icon="rocket">
+    * **Sistema Operativo** Windows 95 o 98
+    * **CPU:** Pentium 200 Mhz
+    * **RAM:** 32Mb
+    * **GPU:** Tarjeta gráfica con soporte DirectX 6 PCI/AGP con 4Mb de VRAM
+    * **Audio:** Tarjeta de sonido con soporte DirectX 6
+  </TabItem>
+</Tabs>
+
+---
+
+<Tabs>
+  <TabItem label="🖥️ PC Windows 98SE">
+
+  **Estado:** Totalmente jugable con mejoras y parches necesarios.
+
+    **Hardware de prueba:**
+    * **Placa Base:** Gigabyte GA-8IPE1000-G (Rev. 4.x)
+    * **CPU:** Pentium IV 3.0e Socket 478
+    * **RAM:** 2048MB DDR 400 (2x1024MB Dual Channel)
+    * **GPU:** Nvidia GeForce 6600 GT 128MB GDDR3 AGP 8x
+    * **Aceleradora:** Creative 3D Blaster [3dfx] Voodoo 2 12MB SLI
+    * **Audio:** Sound Blaster Live! CT4830
+
+    #### Pasos para la instalación:
+    <Steps>
+    1. Instalar desde el CD-ROM original (Instalación Completa recomendada).
+    2. Aplicar el parche oficial v1.5 (En mi caso el Europeo)
+    3. A Jugar!
+    </Steps>
+
+    <Aside type="note">
+      Si activas el suavizado de movimiento en las opciones gráficas avanzadas, el framerate del juego se bloquea a 30fps.
+    </Aside>
+  </TabItem>
+
+  <TabItem label="🖥️ PC Windows 11">
+
+    **Estado:** Totalmente jugable con mejoras y parches necesarios.
+
+    **Hardware de prueba:**
+    * **Placa Base:** ASUS ROG STRIX B650E-I GAMING WIFI
+    * **CPU:** Ryzen 9600x
+    * **RAM:** 32Gb DDR5 6000Mhz CL30
+    * **GPU:** Nvidia GeForce RTX 5070 ti
+
+    #### Arreglos Imprescindibles:
+    <CardGrid>
+      <Card title="dgVoodoo2" icon="setting">
+        - Copia los ficheros de la carpeta MS, que son los de DirectX, a la carpeta del juego.
+        - Abre dgvoodoo2.exe y agrega el directorio del juego. C:\Ruta\Al\Juego\CMRally
+        - Desactiva dgvoodoo watermark.
+        - Resto de configuraciones lo puedes dejar por defecto.
+      </Card>
+      <Card title="Resoluciones" icon="external">
+        Si vas a jugar con resoluciones 4:3 te recomiendo forza la relación de ascpecto a *Stretched keep aspect ratio*.
+        
+        Con **dgVoodoo2** no deberías tener problemas para jugar en resoluciones 16:9 y la relación de aspecto es buena, no parece estirado cuando fuerzas 16:9.
+      </Card>
+    </CardGrid>
+
+    #### Instrucciones:
+    <Steps>
+    1. Instalar desde el CD-ROM original (Instalación Completa recomendada).
+    2. Aplicar el parche oficial v1.5 (En mi caso el Europeo)
+    3. Ir a la carpeta del juego y hacer un backup del ejecutable *Rally.exe*
+    4. Descarga Patrxgt's Unofficial Modern Patch para arreglar los menús del juego y que no pida el CD-ROM.
+    5. Extráelo en la carpeta que prefieras.
+    6. Copia el archivo "Rally.exe" de la carpeta de instalación de tu juego y pégalo dentro de la carpeta "put_rally.exe_here".
+    7. Ejecuta el archivo "patch_región de tu juego.bat" y espera hasta que aparezca el archivo "Rally.exe_patched" en la carpeta.
+    8. Cambia el nombre de "Rally.exe_patched" a "Rally.exe" y reemplaza el archivo original en la carpeta de instalación del juego. 
+    </Steps>
+
+    <Aside type="note">
+      * Si activas el suavizado de movimiento en las opciones gráficas avanzadas, el framerate del juego se bloquea a 30fps.
+      Activar antialiasing provoca cierres inesperados.
+    </Aside>
+  </TabItem>
+</Tabs>
+
+---
+
+## 💾 Ubicación de Archivos
+
+* **Partidas Guardadas:** `C:\Ruta\Al\Juego\Saves`
+* **Configuración:** `C:\Ruta\Al\Juego\config.cfg`
+
+## 🎥 Benchmarks y Capturas
+*(Aquí puedes añadir fotos de tu colección o capturas del juego corriendo en tu hardware)*
+
+---
+
+> **Nota del autor:** Esta configuración ha sido probada personalmente en un equipo físico con Windows 98 SE y en un PC moderno con Windows 11 Pro.
