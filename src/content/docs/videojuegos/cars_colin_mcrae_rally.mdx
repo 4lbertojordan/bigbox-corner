@@ -93,19 +93,24 @@ import { Steps, Aside, Tabs, TabItem, CardGrid, Card } from '@astrojs/starlight/
 
     #### Instrucciones:
     <Steps>
-    1. Instalar desde el CD-ROM original (Instalación Completa recomendada).
-    2. Aplicar el parche oficial v1.5 (En mi caso el Europeo)
-    3. Ir a la carpeta del juego y hacer un backup del ejecutable *Rally.exe*
-    4. Descarga Patrxgt's Unofficial Modern Patch para arreglar los menús del juego y que no pida el CD-ROM.
-    5. Extráelo en la carpeta que prefieras.
-    6. Copia el archivo "Rally.exe" de la carpeta de instalación de tu juego y pégalo dentro de la carpeta "put_rally.exe_here".
-    7. Ejecuta el archivo "patch_región de tu juego.bat" y espera hasta que aparezca el archivo "Rally.exe_patched" en la carpeta.
-    8. Cambia el nombre de "Rally.exe_patched" a "Rally.exe" y reemplaza el archivo original en la carpeta de instalación del juego. 
+    1. Descarga y ejecuta [16-bit InstallShield Support package](https://learn.microsoft.com/en-us/troubleshoot/windows-client/application-management/x64-windows-not-support-16-bit-programs#use-16-bit-installshield-installers-to-install-32-bit-applications) para poder instalar el juego. El instalador es de 16-bit y no es compatible con Windows 11.
+    2. Instalar desde el CD-ROM original (Instalación Completa recomendada).
+    3. Aplicar el parche oficial v1.5 (En mi caso el Europeo)
+    4. Ir a la carpeta del juego y hacer un backup del ejecutable *Rally.exe*
+    5. Descarga Patrxgt's Unofficial Modern Patch para arreglar los menús del juego y que no pida el CD-ROM.
+    6. Extráelo en la carpeta que prefieras.
+    7. Copia el archivo "Rally.exe" de la carpeta de instalación de tu juego y pégalo dentro de la carpeta "put_rally.exe_here".
+    8. Ejecuta el archivo "patch_región de tu juego.bat" y espera hasta que aparezca el archivo "Rally.exe_patched" en la carpeta.
+    9. Cambia el nombre de "Rally.exe_patched" a "Rally.exe" y reemplaza el archivo original en la carpeta de instalación del juego. 
     </Steps>
 
     <Aside type="note">
       * Si activas el suavizado de movimiento en las opciones gráficas avanzadas, el framerate del juego se bloquea a 30fps.
       Activar antialiasing provoca cierres inesperados.
+    </Aside>
+    <Aside type="caution" title='Importante'>
+      * El instalador del juego es de 16-bit y no es compatible con Windows 11.
+      Para instalarlo debes ejecutar el [16-bit InstallShield Support package](https://learn.microsoft.com/en-us/troubleshoot/windows-client/application-management/x64-windows-not-support-16-bit-programs#use-16-bit-installshield-installers-to-install-32-bit-applications).
     </Aside>
   </TabItem>
 </Tabs>
