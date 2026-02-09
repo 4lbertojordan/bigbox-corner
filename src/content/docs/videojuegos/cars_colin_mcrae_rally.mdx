@@ -5,17 +5,26 @@ hero:
   tagline: "Estado: Totalmente jugable con mejoras Parches necesarios"
 ---
 
-import { Steps, Aside, Tabs, TabItem, CardGrid, Card } from '@astrojs/starlight/components';
+import {
+  Steps,
+  Aside,
+  Tabs,
+  TabItem,
+  CardGrid,
+  Card,
+} from "@astrojs/starlight/components";
+
+<CardGrid>
+  <Card>
 
 ## 📋 Ficha Técnica Rápida
 
-| Especificación | Detalle |
-| :--- | :--- |
-| **Lanzamiento** | 1998 |
-| **Desarrollador** | Codemasters |
-| **Soporte API** | DirectX 6 |
+| Especificación          | Detalle       |
+| :---------------------- | :------------ |
+| **Lanzamiento**         | 1998          |
+| **Desarrollador**       | Codemasters   |
+| **Soporte API**         | DirectX 6     |
 | **Sistemas Operativos** | Windows 95/98 |
-
 
 ---
 
@@ -39,12 +48,20 @@ import { Steps, Aside, Tabs, TabItem, CardGrid, Card } from '@astrojs/starlight/
   </TabItem>
 </Tabs>
 
+  </Card>
+  <Card>
+
+![Colin McRae Rally Big Box](https://www.picclickimg.com/xhwAAeSw2ihpb2gx/Colin-Mcrae-Rally-Pc-Italiano-Big-Box-Consegna.webp)
+
+  </Card>
+</CardGrid>
+
 ---
 
 <Tabs>
   <TabItem label="🖥️ PC Windows 98SE">
 
-  **Estado:** Totalmente jugable con mejoras y parches necesarios.
+**Estado:** Totalmente jugable con mejoras y parches necesarios.
 
     **Hardware de prueba:**
     * **Placa Base:** Gigabyte GA-8IPE1000-G (Rev. 4.x)
@@ -64,6 +81,7 @@ import { Steps, Aside, Tabs, TabItem, CardGrid, Card } from '@astrojs/starlight/
     <Aside type="note">
       Si activas el suavizado de movimiento en las opciones gráficas avanzadas, el framerate del juego se bloquea a 30fps.
     </Aside>
+
   </TabItem>
 
   <TabItem label="🖥️ PC Windows 11">
@@ -77,6 +95,7 @@ import { Steps, Aside, Tabs, TabItem, CardGrid, Card } from '@astrojs/starlight/
     * **GPU:** Nvidia GeForce RTX 5070 ti
 
     #### Arreglos Imprescindibles:
+
     <CardGrid>
       <Card title="dgVoodoo2" icon="setting">
         - Copia los ficheros de la carpeta MS, que son los de DirectX, a la carpeta del juego.
@@ -86,7 +105,7 @@ import { Steps, Aside, Tabs, TabItem, CardGrid, Card } from '@astrojs/starlight/
       </Card>
       <Card title="Resoluciones" icon="external">
         Si vas a jugar con resoluciones 4:3 te recomiendo forza la relación de ascpecto a *Stretched keep aspect ratio*.
-        
+
         Con **dgVoodoo2** no deberías tener problemas para jugar en resoluciones 16:9 y la relación de aspecto es buena, no parece estirado cuando fuerzas 16:9.
       </Card>
     </CardGrid>
@@ -101,7 +120,7 @@ import { Steps, Aside, Tabs, TabItem, CardGrid, Card } from '@astrojs/starlight/
     6. Extráelo en la carpeta que prefieras.
     7. Copia el archivo "Rally.exe" de la carpeta de instalación de tu juego y pégalo dentro de la carpeta "put_rally.exe_here".
     8. Ejecuta el archivo "patch_región de tu juego.bat" y espera hasta que aparezca el archivo "Rally.exe_patched" en la carpeta.
-    9. Cambia el nombre de "Rally.exe_patched" a "Rally.exe" y reemplaza el archivo original en la carpeta de instalación del juego. 
+    9. Cambia el nombre de "Rally.exe_patched" a "Rally.exe" y reemplaza el archivo original en la carpeta de instalación del juego.
     </Steps>
 
     <Aside type="note">
@@ -112,19 +131,14 @@ import { Steps, Aside, Tabs, TabItem, CardGrid, Card } from '@astrojs/starlight/
       * El instalador del juego es de 16-bit y no es compatible con Windows 11.
       Para instalarlo debes ejecutar el [16-bit InstallShield Support package](https://learn.microsoft.com/en-us/troubleshoot/windows-client/application-management/x64-windows-not-support-16-bit-programs#use-16-bit-installshield-installers-to-install-32-bit-applications).
     </Aside>
+
   </TabItem>
 </Tabs>
 
 ---
 
-## 💾 Ubicación de Archivos
-
-* **Partidas Guardadas:** `C:\Ruta\Al\Juego\Saves`
-* **Configuración:** `C:\Ruta\Al\Juego\config.cfg`
-
 ## 🎥 Benchmarks y Capturas
-*(Aquí puedes añadir fotos de tu colección o capturas del juego corriendo en tu hardware)*
+
+_(Aquí puedes añadir fotos de tu colección o capturas del juego corriendo en tu hardware)_
 
 ---
-
-> **Nota del autor:** Esta configuración ha sido probada personalmente en un equipo físico con Windows 98 SE y en un PC moderno con Windows 11 Pro.
