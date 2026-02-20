@@ -18,12 +18,6 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/4lbertojordan/bigbox-corner' }],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
 					label: 'Videojuegos',
 					autogenerate: { directory: 'videojuegos' },
 				},

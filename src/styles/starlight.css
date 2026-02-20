@@ -48,20 +48,30 @@ html[data-has-hero] .content-panel {
   padding-top: 0.75rem;
 }
 
+.tablist-wrapper {
+  max-width: 100%;
+}
+
 .tablist-wrapper [role="tablist"] {
   display: flex;
+  flex-direction: column;
   width: 100%;
+  gap: 0;
+  border-bottom: 1px solid var(--sl-color-gray-5);
 }
 
 .tablist-wrapper .tab {
-  flex: 1 1 0;
+  flex: 0 1 auto;
   min-width: 0;
 }
 
 .tablist-wrapper .tab > [role="tab"] {
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: left;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  white-space: normal;
 }
 
 @media (min-width: 50rem) {
@@ -79,5 +89,17 @@ html[data-has-hero] .content-panel {
 
   .tagline {
     font-size: 1rem;
+  }
+
+  .tablist-wrapper [role="tablist"] {
+    flex-direction: row;
+    width: fit-content;
+    gap: 0.5rem;
+  }
+
+  .tablist-wrapper .tab > [role="tab"] {
+    width: auto;
+    padding: 0.6rem 1.2rem;
+    white-space: nowrap;
   }
 }
